@@ -1,10 +1,19 @@
 <?php
 	require_once "ConnexionALaBDD.php";
+	require_once "modeleEmploye.php";
+	require_once "modeEmployeManager.php";
 	$connexion=ConnexionBDD();
 	if (isset($_REQUEST['NomEmploye']))
 	{
-		$Manager = new UtilisateurManager($connexion);
-		$Utilisateur = $Manager->getJoueurByPseudoAndMdp($_REQUEST['Pseudo']);
+		if ($_REQUEST['NomEmploye']=="Admin")
+		{
+			session_start();
+			$_SESSION["Utilisateur"]=$_REQUEST['NomEmploye'];
+			header('Location:Admin.php');
+			exit();
+		}
+		$Manager = new EmployeManager($connexion);
+		$Utilisateur = $Manager->getEmployeByNomEmploye($_REQUEST['NomEmploye']);
 		if (isset($Utilisateur) AND !empty($Utilisateur))
 		{
 			session_start();

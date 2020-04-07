@@ -1,5 +1,7 @@
 <?php
 	require_once "ConnexionALaBDD.php";
+	require_once "modeleEmploye.php";
+	require_once "modeEmployeManager.php";
 	$connexion=ConnexionBDD();
 
 	if (isset($_REQUEST["NomEmploye"]) and !empty($_REQUEST["NomEmploye"]))
@@ -12,7 +14,7 @@
 			"NomEmploye" => $_REQUEST["NomEmploye"],
 			"Adresse" => $_REQUEST["Adresse"],
 			"NumeroTelephone" => $_REQUEST["NumeroTelephone"],
-			"Service" => $_REQUEST["Service"]
+			"NomService" => $_REQUEST["NomService"]
 		);
 
 		$Employe = new Employe;

@@ -25,9 +25,9 @@
 			<div><label for="Adresse">Adresse : </label>
 			<input type="text" name="Adresse" id="Adresse"></input></div>
 			<div><label for="NumeroTelephone">Numéro de Téléphone : </label>
-			<input type="number" min="10" max="15" name="NumeroTelephone" id="NumeroTelephone"></input></div>
-			<div><label for="Service">Service : </label>
-			<input type="text" name="Service" id="Service"></input></div>
+			<input type="varchar" min="10" max="15" name="NumeroTelephone" id="NumeroTelephone"></input></div>
+			<div><label for="NomService">Service : </label>
+			<input type="text" name="NomService" id="NomService"></input></div>
 			<br/>
 			<div><input type="submit" class="boutonsFormulaires" name="submit" value="Valider" style="left: 0%">
 				<input type="reset" class="boutonsFormulaires" name="reset" value="Réinitialiser" onclick="location.href='Inscription.php'" style="right: 0%"></div>
