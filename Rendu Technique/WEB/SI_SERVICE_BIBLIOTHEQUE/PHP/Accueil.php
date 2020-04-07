@@ -17,7 +17,7 @@
 		{
 			session_start();
 			$_SESSION["Utilisateur"]=$_REQUEST['NomEmploye'];
-			header('Location:PageSimple.php');
+			header('Location:Utilisateur.php');
 			exit();
 		}
 	}
