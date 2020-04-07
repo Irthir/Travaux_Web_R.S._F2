@@ -32,7 +32,7 @@ header
 	line-height: 100%;
  	text-align: top;
 }
-div
+.contenu
 {
 	width: 70%;
 	margin: auto;
@@ -49,3 +49,20 @@ div
 	float: right;
 	margin-right: 5%;
 }
+
+/*Style pour le formulaire de l'inscription*/
+.labelspan
+{
+	display: inline-block;
+	align: left;
+	width: 50%;
+}
+.inputspan
+{
+	display: inline-block;
+	align: right;
+	width: 50%;
+}
+/*Ca ne donne pas ce que je veux car inline-block fait se comporter le span comme un div ou un p, mais j'aime bien le résultat.*/
+
+/*Note : Penser à diviser le style en plusieurs fichier.*/
