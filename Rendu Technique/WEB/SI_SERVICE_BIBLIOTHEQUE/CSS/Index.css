@@ -22,3 +22,30 @@ a
 {
 	color: lightblue;
 }
+
+/*Ajout du style du header*/
+header
+{
+	position: fixed;
+	width: 100%;
+	height: 20px;
+	line-height: 100%;
+ 	text-align: top;
+}
+div
+{
+	width: 70%;
+	margin: auto;
+}
+/*L'objet qui va garder la taille du header tout en haut de la page.*/
+.TailleHeader
+{
+	 height: 20px;
+	 width: 100%;
+}
+/*On veut garder notre lien de deconnexion visible dans le header, toujours tout à droite.*/
+.LienDeconnexion
+{
+	float: right;
+	margin-right: 5%;
+}

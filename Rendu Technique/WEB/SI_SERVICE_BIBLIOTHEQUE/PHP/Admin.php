@@ -50,6 +50,9 @@
 	</HEAD>
 
 	<BODY>
+		<div class="TailleHeader"></div>
+		<header><a class="LienDeconnexion" href="./Deconnexion.php">Deconnexion</a><br/></header>
+		
 		<h1>Ceci est une page PHP pour l'admin.</h1>
 
 		<?php
@@ -125,7 +128,7 @@
 
 		<a href="./Deconnexion.php">Deconnexion</a><br/>
 		<footer>
-		<h3>Contacts :</h3>
+		<h3>Contact :</h3>
 			<ul><li>r.schlotter@ludus-academie.com</li></ul>
 		</footer>
 	</BODY>

@@ -48,7 +48,7 @@
 
 		
 		<footer>
-			<h3>Contacts :</h3>
+			<h3>Contact :</h3>
 			<ul><li>r.schlotter@ludus-academie.com</li>
 			</ul>
 		</footer>
