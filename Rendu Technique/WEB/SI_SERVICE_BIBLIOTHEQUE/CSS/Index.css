@@ -1,0 +1,24 @@
+body
+{
+	background-color : #113344;
+	color:#ffffff;
+	border-collapse:collapse;
+	text-align: center;
+	vertical-align: middle; 
+}
+
+fieldset
+{
+	display: inline-block;
+}
+
+footer
+{
+	display:flex;
+	justify-content: center;
+}
+
+a
+{
+	color: lightblue;
+}
