@@ -103,7 +103,7 @@
 			}
 			catch(PDOException $e)
 			{
-				eecho "<script>console.log(\"Erreur : ".$e->getMessage()."\");</script>";
+				echo "<script>console.log(\"Erreur : ".$e->getMessage()."\");</script>";
 			}
 		}
 
