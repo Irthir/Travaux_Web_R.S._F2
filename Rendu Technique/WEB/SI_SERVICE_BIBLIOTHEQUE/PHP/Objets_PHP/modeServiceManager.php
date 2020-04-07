@@ -25,7 +25,7 @@
 			//Récupérer la connexion
 			global $connexion;
 
-			$req = "INSERT INTO Service (NomService, Localisation, NumeroTelephone,NomService) VALUES
+			$req = "INSERT INTO Service (NomService, Localisation) VALUES
 					(:NOMSERVICE,:LOCALISATION)";
 
 			try
@@ -72,7 +72,7 @@
 					$mService = array
 					(
 						"NomService" => $result['NomService'],
-						"Localisation" => $result['Localisation'],
+						"Localisation" => $result['Localisation']
 					);
 
 					$ServiceActuel = new Service;
@@ -83,7 +83,7 @@
 				}
 				elseif ($nb<1)
 				{
-					//On indique qu'il y a eu un problième dans la récupération du Service.
+					//On indique qu'il y a eu un problème dans la récupération du Service.
 					echo "<script>console.log(\"Aucun résultat pour : NomService = $NomService.\");</script>";
 				}
 				else

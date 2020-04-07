@@ -1,7 +1,6 @@
 <?php
 	require_once "ConnexionALaBDD.php";
-	require_once "modeleEmploye.php";
-	require_once "modeEmployeManager.php";
+	require_once "Objets_PHP/modeEmployeManager.php";
 	$connexion=ConnexionBDD();
 	if (isset($_REQUEST['NomEmploye']))
 	{

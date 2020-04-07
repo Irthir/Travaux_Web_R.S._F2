@@ -1,5 +1,5 @@
 <?php
-	/*Classe Employe en PHP*/
+	/*Classe Service en PHP*/
 
 	class Service
 	{
@@ -49,7 +49,7 @@
 		/*Fonction de comparaison entre deux Services*/
 		public function equals(Service $Service)
 		{
-			return ($this->getNomService()==$Employe->getNomService());
+			return ($this->getNomService()==$Service->getNomService());
 		}
 
 		public function hydrate(array $donnees)
