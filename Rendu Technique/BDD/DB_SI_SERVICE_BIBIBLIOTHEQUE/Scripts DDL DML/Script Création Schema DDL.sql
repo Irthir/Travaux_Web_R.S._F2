@@ -19,7 +19,7 @@ CREATE TABLE Employe
 (
 	NomEmploye varchar(80), -- L'employé a un nom, une adresse un numéro de téléphone et travaille dans un service.
 	Adresse varchar(80),
-	NumeroTelephone int (10),
+	NumeroTelephone varchar (15),
 	NomService varchar(80), 
 	CONSTRAINT ServiceExistant FOREIGN KEY (NomService) REFERENCES Service (NomService), -- Le service doit exister pour qu'il puisse y travailler.
 	CONSTRAINT NumeroTelephoneUnique UNIQUE (NumeroTelephone), -- Il ne peut pas y avoir un numéro de téléphone identique entre deux employés.
